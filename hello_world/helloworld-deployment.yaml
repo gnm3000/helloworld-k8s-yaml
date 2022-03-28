@@ -14,7 +14,8 @@ spec:
         app: helloworld
     spec:
       containers:
-      - image: gnm3000/go-hello-world-go:latest
+      - image: gnm3000/go-hello-world-go:v2.0
         name: helloworld
+        imagePullPolicy: Always
         ports:
         - containerPort: 3000
